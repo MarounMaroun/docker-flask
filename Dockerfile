@@ -11,4 +11,4 @@ WORKDIR /hello_world
 EXPOSE 8003
 
 RUN pip install -r requirements.txt
-ENTRYPOINT ./gunicorn_starter
+ENTRYPOINT ["sh", "gunicorn_starter"]
